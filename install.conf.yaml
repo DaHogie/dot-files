@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+      force: true
+    ~/.vimrc:
+      force: true
+    ~/.bash_profile:
+      force: true
+    ~/Library/Application Support/Code/User/settings.json:
+      force: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
